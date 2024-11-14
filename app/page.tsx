@@ -1,11 +1,10 @@
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import {Button} from "/components/ui/button";
 
 export default function Home() {
   return (
-    <div className="container">
-      <h1>Hello Master!!!</h1>
-      <Button variant="destructive">Hila</Button>
+    <div>HEllo World
+      <Button variant="default">Click Me</Button>
     </div>
   );
 }
