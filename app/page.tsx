@@ -1,10 +1,12 @@
-import Image from "next/image";
-import {Button} from "/components/ui/button";
-
-export default function Home() {
+import "./globals.css";
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <div>HEllo World
-      <Button variant="default">Click Me</Button>
-    </div>
+    <html lang="en">
+      <body>{children}</body>
+    </html>
   );
 }
